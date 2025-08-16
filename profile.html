@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile | Lab Readiness Passport</title>
+  <meta name="description" content="View your passport, credentials, and session history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="layout-sidebar">
+  <aside class="sidebar">
+    <div class="inner">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="Lab Readiness Passport logo" class="logo"/>
+        <span class="brand-name">Lab Readiness Passport</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/students.html">Students</a></li>
+          <li><a href="/labs.html">Labs/Universities</a></li>
+          <li><a href="/passport.html">Passport Training</a></li>
+          <li><a href="/book.html">Book Sessions</a></li>
+          <li><a href="/safety.html">Safety & Policies</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/profile.html" aria-current="page">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="spacer"></div>
+      <div class="auth">
+        <button class="btn outline" data-open="#loginDialog">Log in</button>
+        <button class="btn primary" data-open="#signupDialog">Sign up</button>
+      </div>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="Lab Readiness Passport logo" class="logo"/>
+        <span class="brand-name">Lab Readiness Passport</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/students.html">Students</a></li>
+          <li><a href="/labs.html">Labs/Universities</a></li>
+          <li><a href="/passport.html">Passport Training</a></li>
+          <li><a href="/book.html">Book Sessions</a></li>
+          <li><a href="/safety.html">Safety & Policies</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero reveal" data-parallax>
+      <div class="container">
+        <h1>Your profile</h1>
+        <p class="sub">Placeholders for credentials, passport status, and session history.</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Passport</h3>
+          <p class="small">Status: Not issued (demo). After sign-up, your readiness badge would show here.</p>
+        </div>
+        <div class="card">
+          <h3>Credentials</h3>
+          <ul class="list"><li>Safety exam score: —</li><li>Valid through: —</li></ul>
+        </div>
+        <div class="card">
+          <h3>Upcoming sessions</h3>
+          <p class="small">No sessions scheduled.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Lab Readiness Passport</h4>
+        <p>Standardized safety + supervised access to real labs.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="/students.html">Students</a>
+        <a href="/labs.html">Labs/Universities</a>
+        <a href="/passport.html">Passport Training</a>
+        <a href="/book.html">Book Sessions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/blog.html">Blog/Updates</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">© <span id="year"></span> Lab Readiness Passport</p>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+
+  <dialog id="loginDialog" class="auth-modal">
+    <form method="dialog" aria-label="Log in">
+      <h3>Log in</h3>
+      <input type="email" placeholder="you@example.com" required>
+      <input type="password" placeholder="••••••••" required>
+      <div class="actions">
+        <button class="btn outline" value="cancel">Cancel</button>
+        <button class="btn primary" value="login">Continue</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="signupDialog" class="auth-modal">
+    <form method="dialog" aria-label="Sign up">
+      <h3>Create account</h3>
+      <input type="text" placeholder="Full name" required>
+      <input type="email" placeholder="you@example.com" required>
+      <input type="password" placeholder="Create password" required>
+      <div class="actions">
+        <button class="btn outline" value="cancel">Cancel</button>
+        <button class="btn primary" value="signup">Create</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  type      String
+  name      String
+  email     String
+  phone     String?
+  organization String?
+  city      String?
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model IncidentReport {
+  id        Int      @id @default(autoincrement())
+  date      DateTime
+  site      String
+  description String
+  anonymous Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model MentorRequest {
+  id        Int      @id @default(autoincrement())
+  name      String
+  role      String?
+  organization String?
+  email     String
+  timezone  String?
+  topics    String? // comma-separated
+  message   String?
+  createdAt DateTime @default(now())
+}
+
+model LabApplication {
+  id        Int      @id @default(autoincrement())
+  labName   String
+  address   String?
+  manager   String?
+  equipment String?
+  capacity  Int?
+  ratios    String?
+  ageLimits String?
+  policyUrl String?
+  economics String?
+  insurance String?
+  createdAt DateTime @default(now())
+}
+
+model PassportInterest {
+  id        Int      @id @default(autoincrement())
+  name      String
+  age       Int?
+  school    String?
+  email     String
+  phone     String?
+  city      String?
+  accessibility String?
+  guardianName  String?
+  guardianEmail String?
+  guardianPhone String?
+  createdAt DateTime @default(now())
+}

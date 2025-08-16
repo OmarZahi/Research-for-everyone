@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lab Readiness Passport logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="#0f1526" stroke="url(#g)" stroke-width="4"/>
+  <path d="M40 84c0-12 12-20 24-20s24 8 24 20" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="64" cy="48" r="14" stroke="url(#g)" stroke-width="6" fill="none"/>
+  <path d="M26 100h76" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+</svg>

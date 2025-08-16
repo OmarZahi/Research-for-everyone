@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Sessions | Lab Readiness Passport</title>
+  <meta name="description" content="Browse upcoming supervised sessions with host lab, tools, ratios, prerequisites, capacity, price, and location."/>
+  <link rel="canonical" href="https://yourdomain.com/book.html"/>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="Lab Readiness Passport logo" class="logo"/>
+        <span class="brand-name">Lab Readiness Passport</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/students.html">Students</a></li>
+          <li><a href="/labs.html">Labs/Universities</a></li>
+          <li><a href="/passport.html">Passport Training</a></li>
+          <li><a href="/book.html" aria-current="page">Book Sessions</a></li>
+          <li><a href="/safety.html">Safety & Policies</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <a href="?lang=en" class="active">English</a>
+        <span aria-hidden="true">/</span>
+        <a href="?lang=ar" lang="ar" dir="rtl">العربية</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h1>Book a supervised session</h1>
+        <p class="sub">Sign in, upload consent (if minor), pick a slot, pay, then follow your pre-session checklist.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <h2>Filters</h2>
+          <form class="form" id="filters">
+            <div class="row">
+              <div>
+                <label for="city">City</label>
+                <select id="city"><option>All</option><option>Cairo</option><option>Alexandria</option></select>
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="host">Host</label>
+                <select id="host"><option>All</option><option>Uni Lab A</option><option>FabLab B</option></select>
+              </div>
+              <div>
+                <label for="topic">Topic</label>
+                <select id="topic"><option>All</option><option>3D Printing</option><option>Microscopy</option><option>Electronics</option></select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2" id="sessionList">
+        <div class="card session-card">
+          <h3>Supervised Lab Session: 3D Printing</h3>
+          <div class="session-meta">
+            <span class="badge">Host: Uni Lab A</span>
+            <span class="badge">Ratio: 1:8</span>
+            <span class="badge">Prereq: Passport</span>
+            <span class="badge">Cairo</span>
+          </div>
+          <div class="session-meta">
+            <span>Date: 2025-09-12 14:00–17:00</span>
+            <span class="price">EGP 350</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#" data-ev="start_booking" data-label="session_3d_printing">Select slot</a>
+            <a class="btn outline" href="#">Details</a>
+          </div>
+          <script type="application/ld+json">{
+            "@context":"https://schema.org",
+            "@type":"Event",
+            "name":"Supervised Lab Session: 3D Printing",
+            "startDate":"2025-09-12T14:00:00+02:00",
+            "endDate":"2025-09-12T17:00:00+02:00",
+            "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+            "location":{"@type":"Place","name":"Uni Lab A","address":"Cairo, Egypt"},
+            "performer":{"@type":"Organization","name":"Uni Lab A"},
+            "organizer":{"@type":"Organization","name":"Lab Readiness Passport","url":"https://yourdomain.com"},
+            "offers":{"@type":"Offer","price":"350","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://yourdomain.com/book/3d-printing"}
+          }</script>
+        </div>
+
+        <div class="card session-card">
+          <h3>Supervised Lab Session: Microscopy</h3>
+          <div class="session-meta">
+            <span class="badge">Host: FabLab B</span>
+            <span class="badge">Ratio: 1:6</span>
+            <span class="badge">Prereq: Passport</span>
+            <span class="badge">Alexandria</span>
+          </div>
+          <div class="session-meta">
+            <span>Date: 2025-10-03 10:00–13:00</span>
+            <span class="price">EGP 420</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#" data-ev="start_booking" data-label="session_microscopy">Select slot</a>
+            <a class="btn outline" href="#">Details</a>
+          </div>
+          <script type="application/ld+json">{
+            "@context":"https://schema.org",
+            "@type":"Event",
+            "name":"Supervised Lab Session: Microscopy",
+            "startDate":"2025-10-03T10:00:00+02:00",
+            "endDate":"2025-10-03T13:00:00+02:00",
+            "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+            "location":{"@type":"Place","name":"FabLab B","address":"Alexandria, Egypt"},
+            "performer":{"@type":"Organization","name":"FabLab B"},
+            "organizer":{"@type":"Organization","name":"Lab Readiness Passport","url":"https://yourdomain.com"},
+            "offers":{"@type":"Offer","price":"420","priceCurrency":"EGP","availability":"https://schema.org/InStock","url":"https://yourdomain.com/book/microscopy"}
+          }</script>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about.html">About</a>
+        <a href="/partners.html">Partners</a>
+        <a href="/blog.html">Blog/Updates</a>
+        <a href="/mentorship.html">Mentorship</a>
+        <a href="/media-kit.html">Media Kit</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/code-of-conduct.html">Code of Conduct</a>
+        <a href="/waiver.html">Waiver/Consent</a>
+        <a href="/incident.html">Incident Reporting</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Lab Readiness Passport</p>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
